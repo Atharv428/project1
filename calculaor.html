@@ -2,28 +2,99 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    </head>
-<body style="background-color: black; color: white;  display: flex;  align-items: center; justify-content: center;  height: 100vh;">
+    <title>Love Calculator ❤️</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff4e50, #fc913a);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        #parent {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            text-align: center;
+            width: 320px;
+        }
+
+        h1 {
+            color: #ff4e50;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        input {
+            width: 90%;
+            padding: 8px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            margin-top: 5px;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #ff4e50;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            background-color: #ff4e50;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #e63b3d;
+            transform: scale(1.05);
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #ff4e50;
+        }
+
+        .heart {
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+
   <div id="parent">
-    <h1> Love Calculator </h1>
+    <h1>❤️ Love Calculator ❤️</h1>
+
     <form>
-      <label for="Boy">Boy</label>
+      <label for="Boy">Boy 💙</label><br>
       <input type="text" id="Boy" name="Boy"><br><br>
 
-
-       <label for="Girl">Girl</label>
+      <label for="Girl">Girl 💖</label><br>
       <input type="text" id="Girl" name="Girl"><br><br>
 
-      <button type="submit"> Calculate</button>
-       
-
+      <button type="submit">💘 Calculate Love 💘</button>
     </form>
-    <h2 id="result">Result</h2>
+
+    <h2 id="result">💕 Result will appear here 💕</h2>
   </div>
-</body>
+
 <script src="./love.js"></script>
+</body>
 </html>
-  
