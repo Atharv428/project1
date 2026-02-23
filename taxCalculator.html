@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator 💰</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #1f4037, #99f2c8);
+        }
+
+        #parent {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            text-align: center;
+            width: 350px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #1f4037;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin-top: 8px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #1f4037;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            background-color: #1f4037;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            background-color: #145c4a;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #1f4037;
+        }
+    </style>
+</head>
+
+<body>
+<div id="parent">
+  <h1>💰 Tax Calculator</h1>
+
+  <form id="taxForm">
+    <label for="income">Enter your income:</label><br>
+    <input type="number" id="income" name="income" required><br><br>
+    <button type="submit">Calculate Tax</button>
+  </form>
+
+  <h2 id="result">Your tax will appear here</h2>
+</div>
+
+<script src="./income.js"></script>
+</body>
+</html>
